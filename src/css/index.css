@@ -1,0 +1,62 @@
+body {
+	background-color: #fcfcf0;
+	font-size: 20px;
+}
+
+input {
+	font-size: 30px;
+}
+
+select {
+	font-size: 40px;
+}
+
+textarea {
+	font-size:30px;
+}
+
+}
+info-block {
+	background-color: red;
+}
+
+.movie-select {
+	left: 20px;
+	margin: 0 20px;
+}
+
+fieldset {
+	background-color: #fffffc;
+	margin: 10px 25px;
+	border-radius: 10px;
+}
+
+fieldset label {
+	margin: 0 0 0 30px;
+}
+
+#personal input {
+	margin: 10px 10px;
+}
+
+#address {
+	width: 160px;
+}
+
+#best-movie-div * {
+	display: inline;
+
+}
+
+#st {
+	display:inline;
+} 
+
+.question {
+	margin-top: 40px;
+}
+
+textarea {
+	height: 60px;
+	width:  400px;
+}

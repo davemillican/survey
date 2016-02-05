@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+	<link rel="stylesheet" href="src/css/index.css" >
+</head>
+<body>
+	<form>
+
+	 
+		<fieldset id="personal">
+			<legend>Personal Info</legend>
+			<div>
+				<label for="first-name">First Name</label> 	
+				<input id="first-name" type="text" placeholder="First Name" class="info"></input>
+				
+				<label for="last-name">Last Name</label> 	
+				<input id="last-name" type="text" placeholder="Last Name" class="info"></input>
+
+			</div>
+				<label for="address">Address</label> 	
+				<input id="address" type="text" placeholder="Address" class="info"></input>
+			
+				<label for="city">City</label>
+				<select id="city" placeholder="city">
+	  				<option value="S carolina">SC</option>
+	  				<option value="N Carolina">NCA</option>
+	  				<option v alue="GA">GA</option>
+	  				<option value="Florida">Florida</option>
+				</select>
+
+				<label for="zip">Zip Code</label>
+				<input id="zip" type="text" placeholder="Zipcode" class="info"></input>
+
+				<label for="age-text">Age</label>
+				<select id="age-select" placeholder="city">
+	  				<option value="0-17">0-17</option>
+	  				<option value="18-34">18-34</option>
+	  				<option v alue="Over 35">Over 35</option>
+				</select>
+
+				<div>Ethnicity 
+					<input name="ethnicity" type="radio"  class="info">Caucasian</input>
+					<input name="ethnicity" type="radio"  class="info">Hispanic</input>
+					<input name="ethnicity" type="radio"  class="info">African-American</input>
+					<input name="ethnicity" type="radio"  class="info">Other</input>	
+					<input name="ethnicity" type="radio"  class="info">Don't Answer</input>
+				</div>
+					
+				<label for="gender">gender</label>
+				<input type="text" placeholder="Gender" class="info"></input>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Questions</legend>
+
+			<div class="question">
+				<p>In the last 12 months, how many film have you seen in theatres? </p>
+
+				<select class="response">
+	  				<option value="0-5">0-5</option>
+	  				<option value="6-10">6-10</option>
+	  				<option value="More than 10">More than 10</option>
+				</select>
+			</div>
+
+			<div class="question">			
+				<p>In the last 12 months, what genres of movies have you seen in theatres? (Select All that Apply)</p>
+				<input type="checkbox" class="movie-select">Action-Adventure</input>
+				<input type="checkbox" class="movie-select">Sci-Fi</input>
+				<input type="checkbox" class="movie-select">Comedy</input>
+				<input type="checkbox" class="movie-select">Thriller</input>
+				<input type="checkbox" class="movie-select">Musical</input>
+				<input type="checkbox" class="movie-select">Animated</input>
+				<input type="checkbox" class="movie-select">Horror</input>
+				<input type="checkbox" class="movie-select">Family</input>
+				<input type="checkbox" class="movie-select">Documentary</input>
+			</div>	 
+				 
+			<div class="question">
+				<p>If you like watching movies in the theatre, how likely are you to buy the DVD or Blue-Ray later?</p>
+				<select class="response">
+	  				<option value="Very likely">Very likely</option>
+	  				<option value="Somewhat Likely">Somewhat Likely</option>
+	  				<option value="Not Very Likely">Not Very Likely</option>
+	  				<option value="Not Likely at all">Not Likely at all</option>
+				</select>
+			</div>
+	  
+			<div class="question">
+
+				<p>Which of the following aspects do you consider most important to a good movie?</p>
+				<select class="response">
+	  				<option value="Casting">Casting</option>
+	  				<option value="Writing">Writing</option>
+	  				<option value="Special Effects">Special Effects</option>
+	  				<option value="Directing">Directing</option>
+				</select>
+			</div>
+
+			<div class="question">
+				<p>How likely are you to watch a movie during it's opening weekend?</p>
+				<select class="response">
+	  				<option value="Very likely">Very likely</option>
+	  				<option value="Somewhat Likely">Somewhat Likely</option>
+	  				<option value="Not Very Likely">Not Very Likely</option>
+	  				<option value="Not Likely at all">Not Likely at all</option>
+				</select>
+			</div>
+
+			<div id="best-movie-div" class="question">
+				<p>In the last 12 months, what is the best movie you've seen in theatres?</p>
+				<input id="best-movie" type="text"> 
+			</div>
+
+			<div class="question">
+				<p id="st">Briefly describe why you found the movie enjoyable.</p>
+				<textarea> </textarea>
+			</div>
+			
+			<div class="question">
+				How likely are you to see a movie in theatres a second time?  
+				<select class="response">
+	  				<option value="Very likely">Very likely</option>
+	  				<option value="Somewhat Likely">Somewhat Likely</option>
+	  				<option value="Not Very Likely">Not Very Likely</option>
+	  				<option value="Not Likely at all">Not Likely at all</option>
+				</select>
+			</div>
+
+	</form>
+
+
+</body>
+
+</html>
+
