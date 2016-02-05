@@ -1,54 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
 	<title>Survey</title>
 	<link rel="stylesheet" href="src/css/index.css" >
 </head>
 <body>
-	<form>
-
+	<form action="http://localhost:3000" method="post">
 	 
 		<fieldset id="personal">
 			<legend>Personal Info</legend>
 			<div>
 				<label for="first-name">First Name</label> 	
-				<input id="first-name" type="text" placeholder="First Name" class="info"></input>
+				<input id="first-name" name="first-name-v" type="text" placeholder="First Name" class="info"></input>
 				
 				<label for="last-name">Last Name</label> 	
-				<input id="last-name" type="text" placeholder="Last Name" class="info"></input>
+				<input id="last-name" name="last-name-v" type="text" placeholder="Last Name" class="info"></input>
 
 			</div>
 				<label for="address">Address</label> 	
-				<input id="address" type="text" placeholder="Address" class="info"></input>
+				<input id="address" name="address-val" type="text" placeholder="Address" class="info"></input>
 			
 				<label for="city">City</label>
-				<select id="city" placeholder="city">
-	  				<option value="S carolina">SC</option>
-	  				<option value="N Carolina">NCA</option>
-	  				<option v alue="GA">GA</option>
+				<select id="city" name="city-v" placeholder="city">
+	  				<option value="S carolina">S Carolina</option>
+	  				<option value="N Carolina">N Carolina</option>
+	  				<option value="GA">Georgia</option>
 	  				<option value="Florida">Florida</option>
+	  				<option value="Alabama">Alabama</option>
+	  				<option value="Tennessee">Tennessee</option>
 				</select>
 
 				<label for="zip">Zip Code</label>
-				<input id="zip" type="text" placeholder="Zipcode" class="info"></input>
+				<input id="zip" name="zip-v" type="text" placeholder="Zipcode" class="info"></input>
 
 				<label for="age-text">Age</label>
-				<select id="age-select" placeholder="city">
+				<select id="age-select" name="age-v" placeholder="city">
 	  				<option value="0-17">0-17</option>
 	  				<option value="18-34">18-34</option>
-	  				<option v alue="Over 35">Over 35</option>
+	  				<option value="Over 35">Over 35</option>
 				</select>
 
 				<div>Ethnicity 
-					<input name="ethnicity" type="radio"  class="info">Caucasian</input>
-					<input name="ethnicity" type="radio"  class="info">Hispanic</input>
-					<input name="ethnicity" type="radio"  class="info">African-American</input>
-					<input name="ethnicity" type="radio"  class="info">Other</input>	
-					<input name="ethnicity" type="radio"  class="info">Don't Answer</input>
+					<input name="ethnicity" type="radio"  class="info" value="1">Caucasian</input>
+					<input name="ethnicity" type="radio"  class="info" value="2">Hispanic</input>
+					<input name="ethnicity" type="radio"  class="info" value="3">African-American</input>
+					<input name="ethnicity" type="radio"  class="info" value="4">Other</input>	
+					<input name="ethnicity" type="radio"  class="info" value="5">Don't Answer</input>
 				</div>
 					
-				<label for="gender">gender</label>
-				<input type="text" placeholder="Gender" class="info"></input>
+				<label for="gender">Gender</label>
+				<input name="gender" type="radio"  class="info" value="m">Male</input>
+				<input name="gender" type="radio"  class="info" value="w">Female</input>
+
 
 		</fieldset>
 
@@ -67,15 +70,15 @@
 
 			<div class="question">			
 				<p>In the last 12 months, what genres of movies have you seen in theatres? (Select All that Apply)</p>
-				<input type="checkbox" class="movie-select">Action-Adventure</input>
-				<input type="checkbox" class="movie-select">Sci-Fi</input>
-				<input type="checkbox" class="movie-select">Comedy</input>
-				<input type="checkbox" class="movie-select">Thriller</input>
-				<input type="checkbox" class="movie-select">Musical</input>
-				<input type="checkbox" class="movie-select">Animated</input>
-				<input type="checkbox" class="movie-select">Horror</input>
-				<input type="checkbox" class="movie-select">Family</input>
-				<input type="checkbox" class="movie-select">Documentary</input>
+				<input type="checkbox" value="0" class="movie-select">Action-Adventure</input>
+				<input type="checkbox" value="1" class="movie-select">Sci-Fi</input>
+				<input type="checkbox" value="2" class="movie-select">Comedy</input>
+				<input type="checkbox" value="3" class="movie-select">Thriller</input>
+				<input type="checkbox" value="4" class="movie-select">Musical</input>
+				<input type="checkbox" value="5" class="movie-select">Animated</input>
+				<input type="checkbox" value="6" class="movie-select">Horror</input>
+				<input type="checkbox" value="7" class="movie-select">Family</input>
+				<input type="checkbox" value="8" class="movie-select">Documentary</input>
 			</div>	 
 				 
 			<div class="question">
@@ -111,23 +114,27 @@
 
 			<div id="best-movie-div" class="question">
 				<p>In the last 12 months, what is the best movie you've seen in theatres?</p>
-				<input id="best-movie" type="text"> 
+				<input name="best-movie" id="best-movie" type="text"> 
 			</div>
 
 			<div class="question">
 				<p id="st">Briefly describe why you found the movie enjoyable.</p>
-				<textarea> </textarea>
+				<textarea name="describe-movie"> </textarea>
 			</div>
 			
 			<div class="question">
 				How likely are you to see a movie in theatres a second time?  
-				<select class="response">
+				<select name="likely-response" class="response">
 	  				<option value="Very likely">Very likely</option>
 	  				<option value="Somewhat Likely">Somewhat Likely</option>
 	  				<option value="Not Very Likely">Not Very Likely</option>
 	  				<option value="Not Likely at all">Not Likely at all</option>
 				</select>
 			</div>
+
+		</fieldset>
+
+		<input type="submit" value="Submit">
 
 	</form>
 
